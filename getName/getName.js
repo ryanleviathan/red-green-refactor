@@ -1,5 +1,5 @@
 const getName = (name) => {
-  const nameFound = name['name']; {
+  const nameFound = name.name; {
     return nameFound;
   }
 }
