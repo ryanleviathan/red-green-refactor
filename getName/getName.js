@@ -1,8 +1,4 @@
-const getName = (names) => {
-  const { name } = names; {
-    return name;
-  }
-}
+const getName = name => name.name;
 
 module.exports = {
   getName
