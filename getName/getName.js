@@ -1,6 +1,6 @@
-const getName = (name) => {
-  const nameFound = name.name; {
-    return nameFound;
+const getName = (names) => {
+  const { name } = names; {
+    return name;
   }
 }
 
