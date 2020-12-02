@@ -1,21 +1,9 @@
-const { hexToRGB } = require('./hex');
+const { capitalizeAndFilter } = require('./capitalizeAndFilter');
 
-describe('hex to rgb function', () => {
-  it('converts a FFFFFF to r: 255, g: 255, b: 255', () => {
-    const white = hexToRGB('FFFFFF');
-    expect(white).toEqual({
-      r: 255,
-      g: 255,
-      b: 255
-    });
-  });
+const nameOfThings = ['spot', 'rover', 'bingo', 'fred'];
 
-  it('converts a 000000 to r: 0, g: 0, b: 0', () => {
-    const black = hexToRGB('000000');
-    expect(black).toEqual({
-      r: 0,
-      g: 0,
-      b: 0
-    });
+describe('takes an array of strings, capitalizing all strings and filtering out any string that starts with the letter f', () => {
+  it('does it', () => {
+    expect(capitalizeAndFilter(nameOfThings)).toEqual(['SPOT', 'ROVER', 'BINGO']);
   });
 });

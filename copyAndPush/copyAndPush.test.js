@@ -7,7 +7,7 @@ describe('returns a new array with all the original items in it with a new item 
     expect(copyAndPush(numbers, 4)).toEqual([1, 2, 3, 4]);
   });
 
-  it('and does it again', () => {
+  it('and returns unchanged original array', () => {
     expect (numbers).toEqual([1, 2, 3]);
   });
 });
